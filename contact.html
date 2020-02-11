@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--All css files are loaded inside of the head tag-->
+	<!-- link to css file, index.html to css folder to css file-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="reset/css" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin&display=swap" rel="stylesheet">
+	<!--------------->
+</head>
+<body>
+	<h1 class="hidden">Molson Breweries</h1>
+	<div class="logo"><img src="images/FIPlogo.jpg" alt="Molson Logo"></div>
+	<nav class="mainNav">
+		<a href="collection.html" class="button nav">Collection</a>
+		<a href="history.html"class="button nav">History</a>
+		<a href="index.html"class="button nav">Home</a>
+		<a href="#"class="button nav">Missions</a>
+		<a href="info.html"class="button nav">Info</a>
+	</nav>
+
+	<section id="mainContact"><h2 class="hidden">Contact Form</h2><!--Open Main Contact -->
+		<section id="contactArea"><h2 class="hidden">Input Area</h2><!--Open contactArea-->
+			<div id="contactText"></div>
+			<form id="contactForm" action="form.php" method="post">
+			<ul>
+			<li><label>Name:</label>
+			<input type="text" required size="30" placeholder="Enter your name"></li>
+
+			<li><label>Email: </label>
+			<input type="email" required size="30" placeholder="Enter your Email"></li>
+
+			<li><label>Phone:</label>
+			<input type="tel" required size="30" placeholder="Enter Phone Number"></li>
+
+			<li><label>Comments, Compliments and Criticism:</label></li>
+			<textarea required cols="50" rows="8"></textarea>
+			<input type="submit" value="Submit">
+			</ul>
+			</form>
+		</section><!--Close contactArea -->
+	</section><!--Close Main Contact-->
+	
+		<script src="js/main.js"></script>
+</body>
+</html>
