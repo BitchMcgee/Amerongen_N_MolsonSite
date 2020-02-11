@@ -257,14 +257,6 @@ p
   animation-direction: reverse;
   animation-fill-mode: both;
   animation-play-state: running;
-  -webkit-animation-name: hexJump;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate-reverse;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-play-state: running;
 }
 .hexJump img
 {
