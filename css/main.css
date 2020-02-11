@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+font-family: 'Libre Baskerville', serif;
+font-family: 'Libre Franklin', sans-serif;
+.hidden
+{
+  visibility: hidden !important;
+}
+.logo
+{
+  display: block;
+  float: left;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+.logo img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+/*MAIN NAV START*/
+.mainNav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  font-family: 'Libre Baskerville', serif, arial;
+  background-color: #0e2072;
+}
+.nav
+{
+  color: white;
+}
+.nav
+{
+  /*border: solid 2px black;*/
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  font-size: 28px;
+  font: 'Libre Baskerville', serif, 'Libre Franklin', sans-serif, arial;
+}
+.nav:hover
+{
+  background-color: #488CBC;
+}
+.nav:focus
+{
+  background-color: #295A95;
+}
+h2
+{
+  text-align: center;
+  font-family: 'Libre Baskerville', serif, arial;
+}
+p
+{
+  font-family: 'Libre Franklin', sans-serif, arial;
+}
+/*MAIN NAV END */
+
+/*COLLECTION START*/
+.beers
+{
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.molson
+{
+  /*width: 16%;*/
+  width:200px;
+  height: 200px;
+  /*border: solid 2px black;*/
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.molson img
+{
+  margin-bottom: 5px;
+}
+.molson h2
+{
+
+}
+.desc
+{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.ription
+{
+  text-indent: 5px;
+  width:200px;
+  height: 150px;
+  /*border: solid 2px black;*/
+  text-align: left;
+  font-family: 'Libre Franklin', sans-serif, arial;
+}
+.footNav /*for beer list*/
+{
+  width: 100%;
+  /*width:auto;*/
+}
+.button div h2
+{
+  margin-top: 10px;
+  width: 350px;
+  height: 90px;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.beerList
+{
+  display: none;
+}
+.button:focus + .beerList
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/*.beerList :focus
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}*/
+/*FOOT NAV END*/
+
+
+/* MISSIONS START */
+.stories
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-indent: 5px;
+}
+.stories p
+{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.goals
+{
+  border: solid 2px black;
+  width: 50%;
+  height: 600px;
+}
+.stories h3
+{
+  background-color: #488CBC;
+}
+.environment
+{
+  border: solid 2px black;
+  width: 50%;
+  height: 600px;
+}
+/*MISSIONS END */
+/*HISTORY START*/
+.pageBox
+{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url(images/bottleBlack.svg);
+}
+.contentL
+{
+  width: 33%;
+
+  /*height:*/
+  /*display: block;
+  float: left;*/
+  width: 30%;
+  text-align: center;
+  margin-left: 0px;
+  /*border: solid 2px black;*/
+
+}
+.history
+{
+  border: solid 1px black;
+
+}
+.brewery
+{
+  background-color: #488CBC;
+}
+.railroad
+{
+  margin-top: 15px;
+  background-color: #295A95;
+}
+.export
+{
+  margin-top: 15px;
+  background-color: #488CBC;
+}
+.clock
+{
+  margin-top: 15px;
+  background-color: #295A95;
+}
+.contentM
+{
+/*width: 33%;*/
+/*border: solid 2px black;*/
+}
+#BGBot
+{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 25%;
+  left: 30%;
+  justify-content: center;
+}
+.contentM img
+{
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;*/
+  width: 600px;
+  /*height: 700px;*/
+}
+.hexJump
+{
+  width:150px;
+  height: 150px;
+  /*background-image: url(images/molsonHex.png);*/
+  /*background-color: #013559;*/
+  position: relative;
+  animation-name: hexJump;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  -webkit-animation-name: hexJump;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate-reverse;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+}
+.hexJump img
+{
+  width: 150px;
+  height: 150px;
+}
+@keyframes hexJump {
+  0% {top: 0px;}
+  /*50% {top: 50%;}*/
+  100% {top: 600px;}
+}
+/*@keyframes hexJump {
+  0% {top: 1000px;}
+  /*50% {top: 50%;}
+  100% {top: 0px;}
+}*/
+.contentR
+{
+  width: 33%;
+  /*display: flex;
+  flex-direction: row;*/
+  text-align: center;
+  display: block;
+  float: right;
+  /*justify-content: flex-end;*/
+  margin-right: 0px;
+  /*order: solid 2px black;*/
+}
+.bank
+{
+  margin-top: 15px;
+  background-color: #488CBC;
+}
+.hospital
+{
+  background-color: #295A95;
+}
+.return
+{
+  background-color: #295A95;
+  margin-top: 15px;
+}
+.canadian
+{
+  margin-top: 15px;
+  background-color: #488CBC;
+}
+
+/*HISTORY END*/
+
+/*HOME START*/
+.advert
+{
+  position: absolute;
+  top: 500px;
+  background-color: #488CBC;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  color: black;
+}
+.advert p
+{
+
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: 220px;
+  font-size: 30px;
+}
+.advert h2
+{
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  left: 350px;
+}
+.advert img
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 500px;
+  position: relative;
+}
+.background
+{
+  position: sticky;
+}
+#rCan
+{
+  display: block;
+  float: right;
+  top: -500px;
+
+}
+/*ADVERT END*/
+.storyAd
+{
+  position: absolute;
+  top: 1150px;
+  background-color: #488CBC;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.beerBrowse
+{
+  position: absolute;
+  top: 1350px;
+  background-color: #488CBC;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.conLink
+{
+  position: absolute;
+  top: 1500px;
+  background-color: #488CBC;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+/*HOME END*/
+
+/*INFO START*/
+.box
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.beerPic img
+{
+  width: 600px;
+
+}
+.right
+{
+  width: 50%
+
+
+}
+.brandBlurb
+{
+}
+.topBot img
+{
+  width: 900px;
+}
+/*INFO END*/
+/*CONTACT START*/
+#mainContact label
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*CONTACT END*/
